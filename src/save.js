@@ -1,10 +1,16 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
-export default function save() {
+export default function save({ attributes }) {
+	const { columns } = attributes;
+
 	return (
-		<p { ...useBlockProps.save() }>
-			{ __('Block – hello from the saved content!', 'block') }
-		</p>
+		<div
+			{...useBlockProps.save({
+				className: `has-${columns}-columns`,
+			})}
+		>
+			<InnerBlocks.Content />
+		</div>
 	);
 }
