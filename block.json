@@ -6,7 +6,8 @@
 	"icon": "groups",
 	"description": "A Team Members Grid.",
 	"supports": {
-		"html": false
+		"html": false,
+		"align": ["wide", "full"]
 	},
 	"keywords": ["grid", "team", "members"],
 	"textdomain": "team-members",

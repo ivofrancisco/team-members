@@ -45,8 +45,13 @@
 		> [data-type="if-blocks/team-member"] {
 			margin: 10px;
 
+			.block-editor-media-placeholder {
+				margin-bottom: 20px;
+			}
+
 			.wp-block-if-blocks-team-member-img {
 				position: relative;
+				margin-bottom: 20px;
 
 				&.is-loading img {
 					opacity: 0.3;

@@ -38,6 +38,10 @@ registerBlockType('if-blocks/team-member', {
 			selector: 'img',
 			attribute: 'src',
 		},
+		socialLinks: {
+			type: 'array',
+			default: [{ link: 'https://facebook.com', icon: 'facebook' }],
+		},
 	},
 	icon: 'admin-users',
 	edit: Edit,
